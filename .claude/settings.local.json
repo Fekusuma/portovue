@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(npm list *)",
+      "Bash(npm run *)",
+      "Bash(chmod +x /Users/bsi-2-2200068/Desktop/Learning/porto/create-admin.sh)",
+      "Bash(/Users/bsi-2-2200068/Desktop/Learning/porto/create-admin.sh)",
+      "Bash(curl *)",
+      "Bash(claude mcp *)",
+      "Bash(npx skills *)",
+      "mcp__supabase__apply_migration",
+      "mcp__supabase__execute_sql",
+      "mcp__supabase__get_logs",
+      "mcp__supabase__get_advisors",
+      "mcp__supabase__list_tables",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git commit *)"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "supabase"
+  ]
+}

@@ -1,0 +1,35 @@
+# Dependencies
+node_modules
+
+# Development
+.env.local
+.env.development
+
+# Vercel
+.vercel
+
+# Git
+.git
+.gitignore
+
+# Misc
+.DS_Store
+*.log
+npm-debug.log*
+
+# Build artifacts (will be built on Vercel)
+dist
+
+# Editor files
+.vscode
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Claude
+.claude
+create-admin.*
+supabase-seed.sql
