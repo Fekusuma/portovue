@@ -1,51 +1,51 @@
 <template>
-  <div class="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-800 flex items-center justify-center px-4">
+  <div class="min-h-screen bg-gradient-to-br from-teal-600 via-primary to-teal-700 flex items-center justify-center px-4 py-12">
     <div class="max-w-md w-full">
-      <div class="bg-gray-800 rounded-2xl shadow-2xl p-8">
+      <div class="bg-white rounded-2xl shadow-2xl p-8">
         <div class="text-center mb-8">
-          <h1 class="text-3xl font-bold text-white mb-2">👑 Admin Setup</h1>
-          <p class="text-gray-400">Create super admin account</p>
+          <h1 class="text-3xl font-bold text-dark mb-2">👑 Admin Setup</h1>
+          <p class="text-abu">Buat akun super admin</p>
         </div>
 
-        <div class="bg-yellow-500/20 border border-yellow-500/50 rounded-lg p-4 mb-6">
-          <p class="text-yellow-300 text-sm">
-            <strong>Default Admin Credentials:</strong>
+        <div class="bg-teal-50 border border-teal-200 rounded-lg p-4 mb-6">
+          <p class="text-teal-700 text-sm font-medium">
+            <strong>Kredensial Admin Default:</strong>
           </p>
-          <p class="text-yellow-200 text-sm mt-2">
+          <p class="text-teal-600 text-sm mt-2">
             Email: admin@myportfolio.dev
           </p>
-          <p class="text-yellow-200 text-sm">
+          <p class="text-teal-600 text-sm">
             Password: Admin@123
           </p>
         </div>
 
         <form @submit.prevent="createAdmin" class="space-y-6">
           <div>
-            <label class="block text-sm font-medium text-gray-300 mb-2">Email</label>
+            <label class="block text-sm font-medium text-primary mb-2">Email</label>
             <input
               v-model="adminEmail"
               type="email"
               required
-              class="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 text-white focus:border-indigo-500 focus:outline-none transition"
+              class="w-full px-4 py-3 rounded-lg bg-slate-100 border border-slate-200 text-dark focus:border-primary focus:outline-none transition"
             />
           </div>
 
           <div>
-            <label class="block text-sm font-medium text-gray-300 mb-2">Password</label>
+            <label class="block text-sm font-medium text-primary mb-2">Password</label>
             <input
               v-model="adminPassword"
               type="password"
               required
-              class="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 text-white focus:border-indigo-500 focus:outline-none transition"
+              class="w-full px-4 py-3 rounded-lg bg-slate-100 border border-slate-200 text-dark focus:border-primary focus:outline-none transition"
             />
           </div>
 
-          <div v-if="errorMessage" class="p-4 rounded-lg bg-red-500/20 border border-red-500/50">
-            <p class="text-red-300 text-sm">{{ errorMessage }}</p>
+          <div v-if="errorMessage" class="p-4 rounded-lg bg-red-100 border border-red-300">
+            <p class="text-red-600 text-sm">{{ errorMessage }}</p>
           </div>
 
-          <div v-if="successMessage" class="p-4 rounded-lg bg-green-500/20 border border-green-500/50">
-            <p class="text-green-300 text-sm">{{ successMessage }}</p>
+          <div v-if="successMessage" class="p-4 rounded-lg bg-green-100 border border-green-300">
+            <p class="text-green-600 text-sm">{{ successMessage }}</p>
           </div>
 
           <button
