@@ -19,7 +19,11 @@
       "Bash(git commit *)",
       "Bash(git remote *)",
       "Bash(git branch *)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "Bash(cp /Users/bsi-2-2200068/Downloads/tailwindcss-portofolio/dist/img/foto-febri.png /Users/bsi-2-2200068/Desktop/Learning/porto/public/img/)",
+      "Bash(cp /Users/bsi-2-2200068/Downloads/tailwindcss-portofolio/dist/img/CV.jpg /Users/bsi-2-2200068/Desktop/Learning/porto/public/img/)",
+      "Bash(cp /Users/bsi-2-2200068/Downloads/tailwindcss-portofolio/dist/img/clients/* /Users/bsi-2-2200068/Desktop/Learning/porto/public/img/clients/)",
+      "Bash(cp /Users/bsi-2-2200068/Downloads/tailwindcss-portofolio/dist/img/portfolio/* /Users/bsi-2-2200068/Desktop/Learning/porto/public/img/portfolio/)"
     ]
   },
   "enableAllProjectMcpServers": true,
